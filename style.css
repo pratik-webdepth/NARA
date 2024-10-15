@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D0D0D0;
+    overflow-x: hidden;
+}
+
+#title2 {
+    font-size: clamp(2rem, 5vw, 16rem);
+    padding: 2rem 0 0 10rem;
+    color: #22333B;
+    font-weight: 900;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+header p {
+    font-size: clamp(1rem, 3.5vw, 2rem);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    color: #22333B;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.hyperlink {
+    margin-right: 20px;
+}
+
+.hyperlink a {
+    text-decoration: none;
+    margin: 16px;
+}
+
+.hyperlink li {
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    font-weight: 700;
+    color: #22333B;
+}
+
+.lang {
+    margin-right: 16px;
+    border: #22333B solid;
+    padding: 10px;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.lang select {
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    font-weight: 700;
+    color: #22333B;
+    background-color: #D0D0D0;
+    border: none;
+    outline: none;
+}
+
+.lang option {
+    font-size: clamp(1rem, 3.5vw, 1.3rem);
+    font-weight: 700;
+    color: #22333B;
+    background-color: #D0D0D0;
+}
+
+/* main page css */
+main {
+    background-color: #D0D0D0;
+    height: calc(100vh - 82px);
+    width: 100%;
+}
+
+#title1 {
+    font-size: clamp(2rem, 3vw, 32rem);
+    font-weight: 900;
+    color: #22333B;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#sec1 {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#nara-img img {
+    width: clamp(2em, 100vh, 30em);
+    height: clamp(2em, 100vh, 30em);
+}
+
+#quote-sec {
+    height: 150px;
+    /* width: 570px; */
+}
+
+#quote {
+    background-color: azure;
+    box-shadow: inset#22333B 10px 10px 10px, inset #22333B -10px -10px 10px;
+    border-radius: 0.5em;
+    /* height: 130px;
+    width: 550px; 40vw */
+    padding: 10px 16px;
+}
+
+#quote strong {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    color: #22333B;
+}
+
+/* section 2 */
+.sec2 {
+    background-color: #22333B;
+    height: 70vh;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+#about img {
+    border-radius: 30%;
+    height: 16em;
+    width: max-content;
+}
+
+.myself {
+    height: fit-content;
+    width: 40%;
+    background-color: azure;
+    box-shadow: 25px 20px 0px #0e7bad;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.myself p {
+    font-size: clamp(1rem, 2vh, 1.5em);
+    font-weight: 800;
+}
+
+/* dad */
+#heading-dad {
+    font-size: clamp(1.5rem, 5vw, 10rem);
+    font-weight: 800;
+    color: #22333B;
+    text-align: end;
+    margin-right: 20px;
+}
+
+.about-dad {
+    background-color: #D0D0D0;
+    width: 100%;
+    /* height: 41vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.part1 {
+
+    height: 500px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.part1 img{
+    height: 80%;
+    width: 300px;
+}
+
+.part2 {
+    background-color: azure;
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 25px -20px 0px #0e7bad;
+    margin-right: 2%;
+    padding: 8px;
+}
+.part2 p {
+    font-size: clamp(1rem, 2vh, 2.5em);
+    font-weight: 800;  
+}
+/* Section 5 */
+#sec5{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url(./image/N&S.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #D0D0D0;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* form */
+form{
+    padding: 5%;
+    border-radius: 20px;
+    height: 80vh;
+    width: clamp(10rem, 80vw, 30rem);
+    background-color: #87b1c59d;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #10388e;
+}
+
+form legend{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+}
+form label{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+#mail{
+    height: 2rem;
+    width: 17rem;
+    border:3px solid #0e7bad ;
+    border-radius: 15px;
+    text-align: center;
+    margin: 1rem;
+    font-size: 1.1rem ;
+    font-weight: 500;
+    color: #0e7bad;
+}
+
+#response {
+    height: 20rem;
+    width: clamp(10rem, 100vw, 80%);
+    border: 3px solid #0e7bad;
+    border-radius: 15px;
+    margin: 1rem;
+    padding: 5px;
+        font-size: 1.1rem;
+            font-weight: 500;
+            color: #0e7bad;
+}
+
+fieldset{
+    border: none;
+    padding-top: 2rem ;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+#submit{
+    height: max-content;
+    width: fit-content;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    color: #10388e;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: aqua;
+    box-shadow: 3px 5px 5px rgb(2, 53, 87);
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 450px) {
+    .myself {
+        overflow: hidden;
+        height: fit-content;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #sec1 {
+        display: inline;
+    }
+
+    #quote {
+
+        height: fit-content;
+        width: 80vw;
+    }
+
+    #quote-sec {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .myself {
+        /* height: 315px; */
+        width: 85%;
+    }
+
+    .sec2 {
+        height: 85vh;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1090px) {
+    #quote {
+        height: fit-content;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 860px) {
+    .myself {
+        height: fit-content;
+        width: 80%;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+}
